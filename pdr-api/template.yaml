@@ -326,11 +326,11 @@ Resources:
     Properties:
       StageName: !Ref Stage
       Cors:
+        ApiGatewayApi:
         AllowMethods: "'POST, GET'"
         AllowHeaders: "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"
         AllowOrigin: "'*'"
         MaxAge: "'600'"
-        AllowCredentials: true
       Auth:
         DefaultAuthorizer: KCAuthorizer
         Authorizers:
